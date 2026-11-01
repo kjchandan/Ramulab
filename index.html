@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Ramu Lab">
+      <meta name="description" content="Ramu Lab - Plant Molecular Biology and Stress Signaling Research Group">
+      <title>Ramu Lab | Plant Molecular Biology & Stress Signaling</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="css/aos.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-user-tie"></i>Dr. Ramu S. Vemanna</span>
+                  <span><i class="fas fa-envelope"></i><a class="contact-email-link" href="mailto:ramu.vemanna@rcb.res.in">ramu.vemanna@rcb.res.in</a></span>
+                  <span><i class="fas fa-map-marker-alt"></i><a class="contact-email-link" href="https://maps.app.goo.gl/xcm9YorzVwu1QHwZ6" target="_blank" rel="noopener noreferrer">Regional Centre for Biotechnology, India</a></span>
+               </div>
+               <div class="d-flex align-items-center">
+                  <a class="ttag" href="#contact-section"><i class="fas fa-flask me-1"></i>Join Ramu Lab</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#hero">
+               <div class="lab-logo">
+                  <div class="bico"><i class="fas fa-microscope"></i></div>
+                  <div>
+                     <div class="bname">Ramu<span>Lab</span></div>
+                     <div class="bsub">Stress Biology & Crop Resilience</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">Research</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#people">People</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#patents">Patents</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#alumni">Alumni</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Join Us</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="mailto:ramu.vemanna@rcb.res.in" class="nav-link nav-cta"><i class="fas fa-envelope me-1"></i>Contact Ramu</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>Search Ramu Lab</h4>
+            <form id="labSearchForm" role="search">
+               <div class="sovinput">
+                  <label class="visually-hidden" for="searchInput">Search lab content</label>
+                  <input type="search" id="searchInput" placeholder="Search people, research, papers..." autocomplete="off"/>
+                  <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+               </div>
+            </form>
+            <div class="sovfilters" role="group" aria-label="Filter search results">
+               <button class="sovfilter active" type="button" data-cat="all" aria-pressed="true">All</button>
+               <button class="sovfilter" type="button" data-cat="research" aria-pressed="false">Research</button>
+               <button class="sovfilter" type="button" data-cat="people" aria-pressed="false">People</button>
+               <button class="sovfilter" type="button" data-cat="patents" aria-pressed="false">Patents</button>
+               <button class="sovfilter" type="button" data-cat="publications" aria-pressed="false">Publications</button>
+               <button class="sovfilter" type="button" data-cat="projects" aria-pressed="false">Projects</button>
+               <button class="sovfilter" type="button" data-cat="alumni" aria-pressed="false">Alumni</button>
+               <button class="sovfilter" type="button" data-cat="gallery" aria-pressed="false">Gallery</button>
+               <button class="sovfilter" type="button" data-cat="join-us" aria-pressed="false">Join Us</button>
+               <button class="sovfilter" type="button" data-cat="contact" aria-pressed="false">Contact</button>
+            </div>
+            <div id="searchResults" class="sovresults" aria-live="polite">
+               <p class="sovempty">Search by a person, research topic, project, or publication.</p>
+            </div>
+         </div>
+      </div>
+
+      <main id="page-sections">
+      <section id="hero">
+         <div class="hbgtxt">RESEARCH</div>
+         <div class="container">
+            <div class="row align-items-center g-5 hero-row">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-microscope"></i></div>
+                     <span>Plant molecular biology and stress signaling lab</span>
+                  </div>
+                  <h1 class="htitle">Plant <span class="hl">adaptation</span><br/>for resilient crops</h1>
+                  <p class="hdesc">In Ramu's lab, we explore plant stress-adaptation mechanisms to develop climate-resilient plants with high nutritional value.</p>
+                  <a href="https://rcb.res.in/faculty/dr-ramu-s-vemanna" class="btn-play hero-profile-link" target="_blank" rel="noopener noreferrer">
+                     <div class="pico"><i class="fas fa-external-link-alt"></i></div>
+                     <span>Institute Profile</span>
+                  </a>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/lab/image15.jpg" alt="Ramu Lab group at the Regional Centre for Biotechnology"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="amain"><img src="img/lab/image1.jpg" alt="Dr. Ramu S. Vemanna"/></div>
+                     <div class="asm"><img src="img/lab/image15.jpg" alt="Ramu Lab group"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                     <span class="slbl">Ramu Vemanna's Lab</span>
+                     <h2 class="stitle text-start">Research at <span>Ramu Lab</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Dr. Ramu S. Vemanna is an Associate Professor at the Regional Centre for Biotechnology. His lab studies plant molecular biology, ribosome biogenesis, translational regulation, and plant health.</p>
+                  <div class="profile-credentials">
+                     <strong>Dr. Ramu S. Vemanna</strong>
+                     <span>Associate Professor</span>
+                     <span>PhD 2013, Bangalore University, Bangalore, India</span>
+                     <span>Postdoctoral Researcher, Noble Research Institute, Oklahoma, USA</span>
+                  </div>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-seedling"></i></div>
+                        <div>
+                           <h6>Protein translation in plants</h6>
+                           <p>We investigate ribosome biogenesis, ribosomal proteins, translational mechanisms, and their extra-ribosomal functions in plant development and stress adaptation.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-dna"></i></div>
+                        <div>
+                           <h6>Drought and climate adaptation</h6>
+                           <p>We study acquired tolerant traits and the cellular mechanisms that help crops maintain productivity under changing environmental conditions.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                           <h6>Plant health and crop protection</h6>
+                           <p>Functional and chemical genomics approaches are used to improve resistance against bacterial leaf blight caused by <em>Xanthomonas oryzae</em> pv. <em>oryzae</em>.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#projects" class="btn-red"><i class="fas fa-book-open"></i>View Research</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="projects" class="detail-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Current research</span>
+               <h2 class="stitle">Projects and <span>programs</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">01</span><h4>Ribosome diversity and RPF2</h4><p>Studying rRNA diversity and the functional relevance of rRNA processing factor 2 in ribosome biogenesis, root and shoot development, and drought stress tolerance in rice.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">02</span><h4>Pearl millet quality</h4><p>Genetic dissection of rancidity and goitrogenic C-glycosyl flavone biosynthesis genes to enhance the shelf-life and nutritional quality of pearl millet flour.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">03</span><h4>Resilient rice cultivation</h4><p>An integrated cell wall biochemistry-based strategy for promoting the resilience and circularity of rice cultivation through an Indo-Sweden bilateral program.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">04</span><h4>Nanogel-mediated gene editing</h4><p>Developing CRISPR/Cas9 technologies to improve crop protection against bacterial leaf blight in rice.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">05</span><h4>Ribosomes under drought</h4><p>Understanding how drought stress influences ribosomes and protein synthesis, including the functional relevance of Ribosomal Protein L10 in rice.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">06</span><h4>Plant-pathogen translation</h4><p>Identifying and functionally characterizing genes involved in protein translation and degradation, and developing inhibitors to understand bacterial pathogenicity in rice.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">07</span><h4>Genome integrity and crop improvement</h4><p>Disrupting DNA mismatch repair genes with CRISPR/Cas9 to create genetic variability and characterize their relevance in crop improvement.</p></article></div>
+               <div class="col-md-6 col-lg-4"><article class="detail-card"><span class="detail-number">08</span><h4>BRIC-BIRAC EIR program</h4><p>Developing an agrochemical that inhibits ABA biosynthesis proteins or anion channels that regulate stomatal opening despite ABA accumulation.</p></article></div>
+            </div>
+         </div>
+      </section>
+
+      <section id="patents" class="detail-section detail-section-alt">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Innovation</span>
+               <h2 class="stitle">Patents and <span>technologies</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="publication-list">
+               <article class="publication-item"><span class="publication-year">2025</span><div><h5>Transgene-free, in planta-mediated delivery of RNPs to edit genes in plants</h5><p>Shankar Mavinamar, Sneh Lata Singla Pareek, Avinash Bajaj, Ramu S. Vemanna. Indian Patent Application No. 202511006944, dated 28 January 2025.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2025</span><div><h5>RNP complex for crop protection against bacterial diseases</h5><p>Pal G, Bajaj A, Bhattacharjee S, Vemanna RS. Indian patent application 202311015285; Patent No. 560014, granted 12 February 2025. The nanopolymer-RNP complex targets bacterial disease genes in rice, potato, and Arabidopsis.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Novel small molecule modulators of CRISPR-Cas9 activity and method thereof</h5><p>A. Rode, K. Shinde, D. Ojha, R. Vemanna. Patent No. 539344, granted 27 May 2024.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Pro-transpirants to increase crop productivity</h5><p>Babitha KC, Veena HM, Ramu S. Vemanna. Patent No. 550300, granted 13 September 2024. The formulation keeps stomata open and enhances transpiration and yield in rice, wheat, cowpea, and greengram.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2021</span><div><h5>A pro-transpirants class combination</h5><p>Ramu S. Vemanna, PA, Vanitha, NV, Preethi. Indian Patent Application No. 202111038068, filed 23 August 2021. The agrochemical combination reduces ABA accumulation, enhances transpiration, and increases plant yield under drought.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Synthetic and natural molecules for crop protection</h5><p>Garima Pal and Ramu S. Vemanna. Application No. 202411062781, provisional patent filed for crop protection against bacteria, nematodes, and viruses.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2022</span><div><h5>Expression construct for increasing abiotic stress tolerance</h5><p>Patent file No. 2646/CHE/2014. Ramu S. Vemanna, Babitha K. C., Sheela H. S., Prasad T. G., Tuteja N., and Udayakumar M.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2022</span><div><h5>Herbicide tolerant multigene construct</h5><p>Patent file No. 4195/CHE/2014. Ramu S. Vemanna, Amaranatha Reddy V., and Udayakumar M.</p></div></article>
+            </div>
+         </div>
+      </section>
+
+      <section id="publications" class="detail-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <h2 class="stitle">Recent <span>publications</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="publication-list">
+               <article class="publication-item"><span class="publication-year">2026</span><div><h5>Non-chemical strategies for managing plant diseases and abiotic stresses</h5><p>Adkar-Purushothama CR, Vemanna RS, Mysore KS. <em>Frontiers in Plant Science</em>. 2026;17:1920616.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2026</span><div><h5>Ribosome Processing Factor-2 Interacts with RPL10A to Regulate Selective Translation during Plant Immunity and Drought Stress</h5><p>Yadav S, Mathew K, Singh S, Biswas A, Deshpande S, Kumari C, Reddy SK, Wang K, Maiti TK, Mysore KS, Vemanna RS. <em>bioRxiv</em>. 2026 Mar 13:2026-03.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Small chemical molecules regulating phytohormone signalling alter plant physiological processes</h5><p>Yadav S, Preethi V, Dadi S, Seth CS, G K, Chandrashekar BK, Vemanna RS. <em>Physiology and Molecular Biology of Plants</em>. 2024;30(10):1593-1610. doi:10.1007/s12298-024-01514-w.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Polysome-bound mRNAs and translational mechanisms regulate drought tolerance in rice</h5><p>Dawane A, Deshpande S, Vijayaraghavreddy P, Vemanna RS. <em>Plant Physiology and Biochemistry</em>. 2024;208:108513. doi:10.1016/j.plaphy.2024.108513.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2024</span><div><h5>Nanocarrier-mediated double-stranded RNA manipulates defence response against bacterial diseases</h5><p>Pal G, Ingole KD, Yavvari PS, Verma P, Kumari A, Chauhan C, Chaudhary D, Srivastava A, Bajaj A, Vemanna RS. <em>Molecular Plant Pathology</em>. 2024;25:e13417.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2023</span><div><h5>Phenotyping and metabolome analysis reveal genes determining acquired drought tolerance in rice</h5><p>Lekshmy VS, Preethi V, Karthik N, Arpitha GD, Chaitanya PM, Sathishraj R, Dhananjay Shindhe, Vemanna RS, and colleagues. <em>Physiologia Plantarum</em>. 2023;175(5):e13992.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2022</span><div><h5>Transcriptomic responses under combined bacterial blight and drought stress in rice</h5><p>Pal G, Bakade R, Deshpande S, and colleagues, including Vemanna RS. <em>BMC Plant Biology</em>. 2022;22:349.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2021</span><div><h5>Disruption in the DNA mismatch repair gene MSH2 by CRISPR-Cas9 in indica rice</h5><p>Karthika V, Babitha KC, Chandrashekar K, Kiranmai K, Shankar AG, Udayakumar M, and Vemanna RS. <em>Journal of Agricultural and Food Chemistry</em>. 2021.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2020</span><div><h5>Acquired traits contribute more to drought tolerance in wheat than in rice</h5><p>Preethi V, Vemanna RS, Xinyou Y, Paul CS, Udayakumar M, Sheshshayee S. <em>Plant Phenomics</em>. 2020:5905371.</p></div></article>
+               <article class="publication-item"><span class="publication-year">2015</span><div><h5>Simultaneous expression of regulatory genes improves drought adaptation in peanut</h5><p>S.V. Ramu, Swetha TN, H.S. Sheela, K.C. Babitha, P. Chandrashekar Reddy, T.G. Prasad, M. Udayakumar. <em>Plant Biotechnology Journal</em>. 2015. doi:10.1111/pbi.12461.</p></div></article>
+            </div>
+            <div class="text-center mt-4"><a class="btn-red" href="https://rcb.res.in/faculty/dr-ramu-s-vemanna#publications" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>View complete publication record</a></div>
+         </div>
+      </section>
+
+      <section id="alumni" class="detail-section detail-section-alt">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Lab community</span>
+               <h2 class="stitle">Alumni and <span>former members</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="alumni-grid">
+               <span>Dr. Garima Pal, PhD Scholar (2019-2024), Postdoctoral Fellow at the University of Berkeley, USA</span><span>Dr. Punam Sharma, Project SRF, presently Postdoctoral Fellow at NIPGR, New Delhi</span><span>Devika, Project Associate</span>
+               <span>Kesia Mathew, Project JRF (2024-2026)</span><span>Supriya Singh, Project JRF (2024-2026), PhD Student at University of Gottingen, Germany</span><span>Dr. Akshata Dawane, Postdoctoral Research Fellow, University of Missouri-Kansas City</span><span>Veena Mavatkar, Project Associate (2021-2023), PhD student at the Polish Academy of Sciences</span><span>Shubham Agarwal, Project Fellow (2021-2023), PhD student at NIPGR, New Delhi</span><span>Dr. Chanchal Kumari, DBT-RA (2019-2021), Research Associate at IARI, New Delhi</span><span>Dr. Kishore Ingole, Project Associate (2019-2020), Postdoctoral Fellow at Oxford University, UK</span><span>Dr. Chethan Chauhan, Research Fellow (2019-2020), Research Associate at RCB, Faridabad</span><span>Shristi Sharma, Project JRF (2021)</span><span>Mukund Mendirata, Project Fellow (2020-2022)</span><span>Kalai Magal, Project Fellow (2020-2021)</span><span>Pooja Yadav, Project Fellow (2019-2020)</span>
+               <span>Short-term trainees: Astha Gil, Mayank Agarwal, Sai Chandeeramaulee, Rashmi Mishra, Kaiser Parry, Mohammad Ahmar Rashid Khan, Ocean Khajuria, Labeena Usmani, Madhu Perla, Mahi Sharma, Shreetoma Roy</span>
+            </div>
+         </div>
+      </section>
+
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <h2 class="stitle">Snapshots from the <span>lab</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/lab/image15.jpg"
+                  data-gtitle="Ramu Lab group"
+                  data-gdesc="Ramu Lab group at the Regional Centre for Biotechnology.">
+                  <img src="img/lab/image15.jpg" alt="Ramu Lab group"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Ramu Lab group</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+
+      <section id="people">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <h2 class="stitle">Lab <span>Members</span></h2>
+               <div class="sline"></div>
+               <a class="team-alumni-link" href="#alumni">View alumni <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image1.jpg" alt="Dr. Ramu S. Vemanna"/>
+                        <div class="member-hover"><strong>Associate Professor</strong><span>Plant translation, ribosome biology, and stress adaptation</span><p>Leads research on how ribosome biogenesis, translational regulation, and drought adaptation shape plant growth and crop protection.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Dr. Ramu S. Vemanna</div><div class="team-role">Associate Professor</div><div class="team-summary">Plant translation and stress adaptation</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image14-cropped.png" alt="Dr. Babitha K. C."/>
+                        <div class="member-hover"><strong>EIR Post-doctoral Fellow</strong><span>Agrochemical innovation</span><p>Dr. Babitha works to develop next-generation agrochemicals that improve plant physiological processes by designing small molecules that target relevant proteins to enhance carbon capture, photosynthesis, and crop productivity. The objective is to translate lab discoveries to field applications.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Dr. Babitha K. C.</div><div class="team-role">EIR Post-doctoral Fellow</div><div class="team-summary">Agrochemicals and crop productivity</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image2.jpg" alt="Shobna Yadav"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>rRNA processing and ribosome biogenesis</span><p>Shobhna is trying to unravel rRNA processing, a step in ribosome biogenesis required for plant growth and development. Other than that, you will find her untangling any other interesting problem.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Shobna Yadav</div><div class="team-role">PhD Scholar</div><div class="team-summary">rRNA processing and ribosome biogenesis</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img class="member-photo-upper" src="img/lab/image3-upright.jpg" alt="Libin Thomas"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Ribosome composition in drought-stressed rice</span><p>Libin is studying the changes in ribosome composition and functional insight in rice under drought conditions, and is also interested in deciphering the functional significance of the RPL10-interacting ABC protein.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Libin Thomas</div><div class="team-role">PhD Scholar</div><div class="team-summary">Ribosome composition in drought-stressed rice</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image4.jpg" alt="Manisha Yadav"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Ribosome heterogeneity and drought tolerance</span><p>Manisha is trying to understand the molecular mechanisms of ribosome heterogeneity and the translational regulation underlying plant adaptation to abiotic stresses, with a particular emphasis on drought tolerance in rice. She is particularly interested in understanding how these regulatory mechanisms coordinate plant growth, development, and adaptation under changing environmental conditions.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Manisha Yadav</div><div class="team-role">PhD Scholar</div><div class="team-summary">Ribosome heterogeneity and drought tolerance</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image5.jpg" alt="Sathya Seelan"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Dry-seeded rice and organellar translation</span><p>Sathya works on dry-seeded rice, engineering organellar translation-associated factors to improve seed germination, seedling vigor, and drought tolerance. In his leisure time, he enjoys cooking.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Sathya Seelan</div><div class="team-role">PhD Scholar</div><div class="team-summary">Dry-seeded rice and translation</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image6.jpg" alt="Shubham Singh"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Functional genomics, genome editing, and multi-omics</span><p>Shubham's research focuses on elucidating the molecular mechanisms underlying rice responses to biotic and abiotic stresses using functional genomics, genome editing, and multi-omics approaches to enhance crop resilience. Apart from research work, Shubham likes singing.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Shubham Singh</div><div class="team-role">PhD Scholar</div><div class="team-summary">Functional genomics and crop resilience</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image7.jpg" alt="Suchismita Satapathy"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>rRNA in rice development and resilience</span><p>Suchi is on a quest to unravel the "how" and "why" of rRNA in rice development, growth, and survival, with a focus on plant adaptation and resilience. Beyond the lab, she continues to explore the "how" and "why" of the universe, searching for answers to endless questions that spark her curiosity.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Suchismita Satapathy</div><div class="team-role">PhD Scholar</div><div class="team-summary">rRNA and plant resilience</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image8.jpg" alt="Dana Basheer"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Seed dormancy, ABA signaling, and translational regulation</span><p>Dana is currently investigating the molecular mechanism underlying seed dormancy in rice under drought stress, focusing on the roles of ABA signaling and translational regulation. Apart from her research work, she enjoys watching movies and baking.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Dana Basheer</div><div class="team-role">PhD Scholar</div><div class="team-summary">Seed dormancy and drought</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image9.jpg" alt="Avani Vasudeva"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Polyubiquitin proteins and stress regulation</span><p>Avani is currently working to elucidate the interactions and functional roles of polyubiquitin proteins in rice, with a focus on their potential involvement in stress regulation and cellular processes. Beyond research, Avani loves to explore nature.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Avani Vasudeva</div><div class="team-role">PhD Scholar</div><div class="team-summary">Polyubiquitin and stress regulation</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image10.jpg" alt="Bariz Ali"/>
+                        <div class="member-hover"><strong>PhD Scholar</strong><span>Potato virus-plant interactions</span><p>Bariz works on solving viral infections in potatoes, with a particular interest in understanding virus-plant interactions. He seeks to understand the molecular aspects of viral infection and potato plants' responses to viral stress. Outside the laboratory, he enjoys playing cricket and badminton.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Bariz Ali</div><div class="team-role">PhD Scholar</div><div class="team-summary">Virus-plant interactions</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img class="member-photo-upper" src="img/lab/image11.jpg" alt="Swetannita Chattopadyay"/>
+                        <div class="member-hover"><strong>Senior Research Fellow</strong><span>rRNA diversity and processing</span><p>Swetannita did her PhD on miR160 and its targets, and the ARF role in root system development under nitrogen deficiency in Brassica juncea. She is now working on ribosomal RNA (rRNA) diversity and the functional relevance of rRNA processing. Beyond the bench, she is a trained Odissi classical dancer. She loves painting and creating mandala artwork, with a keen interest in abstract art.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Swetannita Chattopadyay</div><div class="team-role">Senior Research Fellow</div><div class="team-summary">rRNA diversity and processing</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image12.jpg" alt="Umang Kumar Dhandanya"/>
+                        <div class="member-hover"><strong>Project Associate</strong><span>Pearl millet quality and flour shelf-life</span><p>Umang is working on the genetic dissection of rancidity and goitrogenic C-glycosyl flavone biosynthesis genes to enhance the shelf-life and nutritional quality of pearl millet flour. He loves singing, acting, and playing chess.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Umang Kumar Dhandanya</div><div class="team-role">Project Associate</div><div class="team-summary">Pearl millet biosynthesis</div></div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up">
+                  <div class="team-card">
+                     <div class="team-photo">
+                        <img src="img/lab/image13.jpg" alt="Orishma Parida"/>
+                        <div class="member-hover"><strong>Project Associate</strong><span>Rice cell-wall biochemistry and resilience</span><p>Orishma is currently working on an integrated cell-wall biochemistry-based strategy for promoting the resilience and circularity of rice cultivation. She is trying to understand the molecular and regulatory mechanisms that contribute to plant resilience, particularly in rice. Outside the lab, she enjoys practising Odissi classical dance and Hindustani classical music.</p></div>
+                     </div>
+                     <div class="team-card-body"><div class="team-name">Orishma Parida</div><div class="team-role">Project Associate</div><div class="team-summary">Cell wall biochemistry</div></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="contact-section">
+         <div class="container">
+            <div class="join-copy mb-5" data-aos="fade-up">
+               <span class="slbl">Opportunities</span>
+               <h3 class="stitle">Join <span>Ramu Lab</span></h3>
+               <p>Interested in Postdoctoral fellowships, DBT-RA, NPDF, DBT-BioCARE, WOSA, etc. scheme, please write me with a one-page statement of Interest that aligns with my lab focus and send me two contact details of References.</p>
+            </div>
+            <div class="contact-card" data-aos="fade-up">
+               <div class="contact-card-heading">
+                  <h3>Dr. Ramu S. Vemanna</h3>
+                  <p>Associate Professor</p>
+               </div>
+               <div class="contact-details">
+                  <div class="contact-detail">
+                     <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                     <div><strong>Phone</strong><a href="tel:+911292848713">91 129-2848713</a></div>
+                  </div>
+                  <div class="contact-detail">
+                     <div class="cticon"><i class="fas fa-envelope"></i></div>
+                     <div><strong>Email</strong><a href="mailto:ramu.vemanna@rcb.res.in">ramu.vemanna@rcb.res.in</a></div>
+                  </div>
+                  <div class="contact-detail contact-address">
+                     <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                     <div><strong>Address</strong><address><a href="https://maps.app.goo.gl/xcm9YorzVwu1QHwZ6" target="_blank" rel="noopener noreferrer">Regional Centre for Biotechnology,<br/>NCR Biotech Science Cluster, 3rd Milestone,<br/>Faridabad-Gurugram Expressway,<br/>Faridabad - 121 001, Haryana, India</a></address></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      </main>
+
+      <footer>
+         <div class="container">
+            <div class="footer-main">
+               <div class="footer-brand">
+                  <a class="fnm" href="#hero">Ramu<span>Lab</span></a>
+                  <p class="footer-summary">Plant molecular biology, stress signaling, and crop resilience.</p>
+                  <div class="footer-social" aria-label="Social profiles">
+                     <span class="footer-social-item" role="img" aria-label="LinkedIn profile" title="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+                     <span class="footer-social-item" role="img" aria-label="Google Scholar profile" title="Google Scholar"><i class="fas fa-graduation-cap"></i></span>
+                     <span class="footer-social-item" role="img" aria-label="X profile" title="X"><i class="fab fa-twitter"></i></span>
+                     <span class="footer-social-item" role="img" aria-label="YouTube channel" title="YouTube"><i class="fab fa-youtube"></i></span>
+                  </div>
+               </div>
+               <nav class="footer-links" aria-label="Footer navigation">
+                  <h3 class="footer-heading">Explore</h3>
+                  <a href="#about">Research</a>
+                  <a href="#people">People</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#publications">Publications</a>
+                  <a href="#patents">Patents</a>
+                  <a href="#gallery">Gallery</a>
+                  <a href="#contact-section">Join Us</a>
+               </nav>
+               <div class="footer-contact">
+                  <h3 class="footer-heading">Contact</h3>
+                  <div class="footer-contact-list">
+                     <div class="footer-contact-item">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        <div><strong>Dr. Ramu S. Vemanna</strong><span>Associate Professor</span></div>
+                     </div>
+                     <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        <div><strong>Phone</strong><a href="tel:+911292848713">91 129-2848713</a></div>
+                     </div>
+                     <div class="footer-contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div><strong>Email</strong><a class="contact-email-link" href="mailto:ramu.vemanna@rcb.res.in">ramu.vemanna@rcb.res.in</a></div>
+                     </div>
+                     <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div><strong>Address</strong><address><a href="https://maps.app.goo.gl/xcm9YorzVwu1QHwZ6" target="_blank" rel="noopener noreferrer">Regional Centre for Biotechnology,<br/>NCR Biotech Science Cluster, 3rd Milestone,<br/>Faridabad-Gurugram Expressway,<br/>Faridabad - 121 001, Haryana, India</a></address></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <span>Ramu Lab · Regional Centre for Biotechnology</span>
+               <a href="#hero">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </footer>
+
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
